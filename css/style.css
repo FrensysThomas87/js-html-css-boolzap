@@ -46,18 +46,31 @@ header{
   min-width: 35%;
   height: 100%;
   background-color: red;
+  border-right: 2px solid #9B9DE2;
+}
+
+#upper-sidebar{
+  height: 60px;
+  background-color: #EAEAEA;
+  width: 100%;
+}
+
+#friend-section{
+  height: 60px;
+  width: calc(100% - 35% );
+  background-color: #EAEAEA;
 }
 
 main{
   width: calc(100% - 35%);
-  height: calc(100% - 100px);
+  height: calc(100% - 60px);
   background-color: blue;
 }
 
 #bottom{
   width: calc(100% - 35%);
   background-color: green;
-  height: 100px;
+  height: 60px;
   position: absolute;
   bottom: 0;
   right: 0;
