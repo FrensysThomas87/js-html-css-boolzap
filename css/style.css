@@ -48,11 +48,14 @@ header{
 
 }
 
-.container::after{
+.container::after
+{
   clear: both;
   display: table;
   content: "";
 }
+
+
 
 /*sidebar*/
 
@@ -228,6 +231,35 @@ main{
 
 #central-main{
   height:calc(100% - 60px);
+  position: relative;
+
+}
+
+.my-message{
+  background-color: #DDFFC0;
+  top:100px;
+  right: 180px;
+}
+
+.friend-message{
+  background-color: #fff;
+  top:150px;
+  left: 180px;
+}
+
+
+.my-message,
+.friend-message{
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 7px;
+}
+
+.my-message span,
+.friend-message span{
+  line-height: 25px;
 }
 
 /*end central main*/
