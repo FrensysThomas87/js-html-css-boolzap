@@ -2,8 +2,8 @@
 new Vue({
 el: '#app',
 data:{
-  avatarIo: './img/avatar_io.jpg',
-  userName: 'Nome Utente',
+  
+
   contacts: [
 	{
 		name: 'Michele',

@@ -14,10 +14,12 @@
       <div class="container">
         <!-- sidebar -->
         <div id="sidebar" class="float-l overflow-y">
+          
+          <!-- upper sidebar -->
           <div id="upper-sidebar" class="flex">
             <div class="avatar-container flex">
-              <img :src="avatarIo" alt="Avatar">
-              <span>{{userName}}</span>
+              <img src="img/avatar_io.jpg" alt="Avatar">
+              <span>Nome Utente</span>
             </div>
             <div class="upper-sidebar-icons flex">
               <i class="fas fa-circle-notch"></i>
@@ -25,12 +27,22 @@
               <i class="fas fa-ellipsis-v"></i>
             </div>
           </div>
+          <!--end upper sidebar -->
+          
+          <!-- sidebar notifications control -->
           <div class="sidebar-notifications-control">
             <div class="float-l">
               <i class="fas fa-bell-slash"></i>
             </div>
             <span>Ricevi notifiche di nuovi messaggi</span><br>
             <a href="">Attiva notifiche desktop</a>
+          </div>
+          <!--end sidebar notifications control -->
+          <div class="chat-search">
+            
+            <input type="text" placeholder="Cerca o inizia una nuova chat">
+              <i class="fas fa-search"></i>
+            
           </div>
       </div>
         <!--end sidebar -->
