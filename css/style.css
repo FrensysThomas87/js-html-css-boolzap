@@ -28,6 +28,11 @@ i{
   color: #B1B1B1;
 }
 
+i:hover{
+  cursor: pointer;
+
+}
+
 /*end utilities*/
 
 header{
@@ -164,6 +169,11 @@ header{
   padding: 5px;
 }
 
+.sidebar-contacts-list > .avatar-container:hover{
+  cursor: pointer;
+  background-color: #EAEAEA;
+}
+
 .sidebar-contacts-list > .avatar-container > img{
   margin-bottom: 5px;
   width: 15%;
@@ -292,6 +302,7 @@ main{
 
 #main-bottom i{
   font-size: 25px;
+  color: #4D4947;
 }
 
 #main-bottom input{
