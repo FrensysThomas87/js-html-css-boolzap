@@ -67,11 +67,15 @@ header{
   justify-content: space-between;
 }
 
-.avatar-container{
+#upper-sidebar > .avatar-container{
+  align-items: center;
   border-radius: 50%;
   width: 150px;
   height: 40px;
-  align-items: center;
+}
+
+.avatar-container > img{
+  width: 30%;
 }
 
 .upper-sidebar-icons{
@@ -85,9 +89,7 @@ header{
 }
 
 
-.avatar-container > img{
-  width: 30%;
-}
+
 
 .sidebar-notifications-control{
   width: 100%;
@@ -139,6 +141,33 @@ header{
   left: 20px;
   color: #B1B1B1;
 }
+
+.sidebar-contacts-list{
+  padding: 10px;
+
+}
+
+.sidebar-contacts-list > .avatar-container{
+  width: 50px;
+  flex-direction: column;
+
+}
+
+.sidebar-contacts-list > .avatar-container > img{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sidebar-contacts-list > .contacts-name-container{
+  flex-direction: column;
+
+}
+
+.sidebar-contacts-list > .contacts-name-container > span{
+  margin-bottom: 42px;
+  margin-left: 15px;
+}
+
 
 
 /*end sidebar*/
