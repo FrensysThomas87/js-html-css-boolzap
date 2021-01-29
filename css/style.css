@@ -1,4 +1,4 @@
-
+/*
 /*utilities*/
 
 *{
@@ -156,7 +156,7 @@ header{
 main{
   width: calc(100% - 35%);
   height: 100%;
-  background-color: blue;
+  background-image: url("../img/mine.jpg");
 }
 
 /*central main*/
@@ -170,8 +170,8 @@ main{
 /*bottom main*/
 #main-bottom{
   width:100%;
-  background-color: green;
+  background-color: #F3EEEA;
   height: 60px;
 }
 
-/*end bottom main*/
+/*end bottom main*/ */
