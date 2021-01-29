@@ -68,6 +68,16 @@ header{
   align-items: center;
 }
 
+.upper-sidebar-icons{
+  width: 80px;
+  align-items: center;
+}
+
+.upper-sidebar-icons > i{
+  padding-right: 15px;
+  color: #B1B1B1;
+}
+
 
 
 /* #sidebar div:first-child{
