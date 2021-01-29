@@ -210,7 +210,7 @@ header{
 }
 
 #friend-section .friend-section-icons i{
-  
+
   padding-right: 15px;
 }
 
@@ -237,6 +237,20 @@ main{
   width:100%;
   background-color: #F3EEEA;
   height: 60px;
+  padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-bottom i{
+  font-size: 25px;
+
+}
+
+#main-bottom input{
+  width: 90%;
+  height: 100%;
+  padding: 10px;
 }
 
 /*end bottom main*/

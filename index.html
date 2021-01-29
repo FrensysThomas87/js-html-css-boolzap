@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
   </head>
   <body>
     <header></header>
@@ -14,7 +14,7 @@
       <div class="container">
         <!-- sidebar -->
         <div id="sidebar" class="float-l overflow-y">
-          
+
           <!-- upper sidebar -->
           <div id="upper-sidebar" class="flex">
             <div class="avatar-container flex">
@@ -28,7 +28,7 @@
             </div>
           </div>
           <!--end upper sidebar -->
-          
+
           <!-- sidebar notifications control -->
           <div class="sidebar-notifications-control">
             <div class="float-l">
@@ -47,15 +47,15 @@
               <img :src="element.avatar" alt="avatar">
               <span>{{element.name}}</span>
             </div>
-          
-            
+
+
           </div>
         </div>
         <!--end sidebar -->
-        
+
         <!-- main -->
-        
-  <!-- main -->
+
+        <!-- main -->
         <main class="float-l overflow-y">
           <!-- friend-section -->
           <div id="friend-section" class="float-l flex">
@@ -76,12 +76,16 @@
           </div>
           <!--end friend-section -->
           <div id="central-main"></div>
-          <div id="main-bottom" class="float-l"></div>
+          <div id="main-bottom" class="float-l flex">
+            <i class="far fa-smile"></i>
+            <input type="text" placeholder="Scrivi messaggio">
+            <i class="fas fa-microphone"></i>
+          </div>
         </main>
         <!--end main -->
       </div>
     </div>
-  
+
   <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
