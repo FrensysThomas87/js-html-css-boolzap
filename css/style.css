@@ -24,6 +24,10 @@ body{
   float: left;
 }
 
+i{
+  color: #B1B1B1;
+}
+
 /*end utilities*/
 
 header{
@@ -85,7 +89,7 @@ header{
 
 .upper-sidebar-icons > i{
   padding-right: 15px;
-  color: #B1B1B1;
+
 }
 
 
@@ -139,7 +143,7 @@ header{
   position: absolute;
   top:30%;
   left: 20px;
-  color: #B1B1B1;
+
 }
 
 .sidebar-contacts-list{
@@ -206,7 +210,7 @@ header{
 }
 
 #friend-section .friend-section-icons i{
-  color: #B1B1B1;
+  
   padding-right: 15px;
 }
 
@@ -235,4 +239,4 @@ main{
   height: 60px;
 }
 
-/*end bottom main*/ */
+/*end bottom main*/
