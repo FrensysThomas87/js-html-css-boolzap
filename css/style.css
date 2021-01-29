@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #DADBD5;
+}
+
 
 .overflow-y{
   overflow-y: auto;
