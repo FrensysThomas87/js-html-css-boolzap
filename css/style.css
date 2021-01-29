@@ -48,7 +48,8 @@ header{
 
 }
 
-.container::after
+.container::after,
+.clearfix::after
 {
   clear: both;
   display: table;
@@ -224,27 +225,39 @@ header{
 main{
   width: calc(100% - 35%);
   height: 100%;
-  background-image: url("../img/mine.jpg");
+
+
 }
 
 /*central main*/
 
+
+.central-main-container{
+  padding-right: 20px;
+  height: calc(100% - 120px);
+  padding-right: 15px;
+  background-color: #fff;
+}
+
 #central-main{
-  height:calc(100% - 60px);
+  height:100%;
   position: relative;
+  background-image: url("../img/mine.jpg");
 
 }
+
+
 
 .my-message{
   background-color: #DDFFC0;
   top:100px;
-  right: 180px;
+  right: 10%;
 }
 
 .friend-message{
   background-color: #fff;
   top:150px;
-  left: 180px;
+  left: 10%;
 }
 
 
@@ -255,6 +268,7 @@ main{
   padding: 10px;
   position: absolute;
   border-radius: 7px;
+  z-index: 1;
 }
 
 .my-message span,
@@ -272,6 +286,7 @@ main{
   padding: 5px 20px;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 
 #main-bottom i{
