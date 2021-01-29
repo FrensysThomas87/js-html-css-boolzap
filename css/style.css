@@ -178,7 +178,39 @@ header{
   height: 60px;
   width: 100%;
   background-color: #EAEAEA;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
 }
+
+#friend-section .friend-section-avatar{
+  align-items: center;
+}
+
+#friend-section  .avatar-container{
+  width: 40px;
+
+}
+
+#friend-section  .avatar-container  img{
+  width: 100%;
+}
+
+#friend-section span{
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+#friend-section span:nth-of-type(2){
+  color:#B3B7BE;
+}
+
+#friend-section .friend-section-icons i{
+  color: #B1B1B1;
+  padding-right: 15px;
+}
+
+
 
 /*end main friend section*/
 
