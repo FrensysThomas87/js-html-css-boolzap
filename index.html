@@ -42,13 +42,12 @@
             <input type="text" placeholder="Cerca o inizia una nuova chat">
             <i class="fas fa-search"></i>
           </div>
-          <div class="sidebar-contacts-list flex">
-            <div class="avatar-container flex">
-              <img v-for="element in contacts" :src="element.avatar" alt="">
+          <div class="sidebar-contacts-list">
+            <div v-for="element in contacts" class="avatar-container">
+              <img :src="element.avatar" alt="avatar">
+              <span>{{element.name}}</span>
             </div>
-            <div class="contacts-name-container flex ">
-              <span v-for="element in contacts">{{element.name}}</span>
-            </div>
+          
             
           </div>
         </div>

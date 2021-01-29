@@ -144,28 +144,28 @@ header{
 
 .sidebar-contacts-list{
   padding: 10px;
+  flex-direction: column;
+
 
 }
 
 .sidebar-contacts-list > .avatar-container{
-  width: 50px;
-  flex-direction: column;
-
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 5px;
 }
 
 .sidebar-contacts-list > .avatar-container > img{
-  margin-bottom: 10px;
-  width: 100%;
+  margin-bottom: 5px;
+  width: 20%;
 }
 
-.sidebar-contacts-list > .contacts-name-container{
-  flex-direction: column;
 
-}
 
-.sidebar-contacts-list > .contacts-name-container > span{
-  margin-bottom: 42px;
+.sidebar-contacts-list .avatar-container span{
+
   margin-left: 15px;
+  vertical-align: top;
 }
 
 
