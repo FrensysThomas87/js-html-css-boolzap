@@ -1,4 +1,6 @@
 
+/*utilities*/
+
 *{
   margin: 0;
   padding: 0;
@@ -17,6 +19,12 @@ body{
 .flex{
   display: flex;
 }
+
+.float-l{
+  float: left;
+}
+
+/*end utilities*/
 
 header{
   height: 100px;
@@ -42,9 +50,7 @@ header{
   content: "";
 }
 
-.float-l{
-  float: left;
-}
+/*sidebar*/
 
 #sidebar{
   width: 35%;
@@ -79,16 +85,13 @@ header{
 }
 
 
-
-/* #sidebar div:first-child{
-  vertical-align: middle;
-} */
-
-
-
 .avatar-container > img{
   width: 30%;
 }
+
+/*end sidebar*/
+
+/*main friend section*/
 
 #friend-section{
   height: 60px;
@@ -96,18 +99,27 @@ header{
   background-color: #EAEAEA;
 }
 
+/*end main friend section*/
+
 main{
   width: calc(100% - 35%);
   height: 100%;
   background-color: blue;
 }
 
+/*central main*/
+
 #central-main{
   height:calc(100% - 60px);
 }
 
+/*end central main*/
+
+/*bottom main*/
 #main-bottom{
   width:100%;
   background-color: green;
   height: 60px;
 }
+
+/*end bottom main*/
