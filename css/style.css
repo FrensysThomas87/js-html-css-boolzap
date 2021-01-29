@@ -121,6 +121,7 @@ header{
   left: 50%;
   transform: translate(-50%, -50%);
   color: #8EDAFC;
+  font-size: 20px;
 }
 
 .sidebar-notifications-control > span{
@@ -225,7 +226,7 @@ header{
 main{
   width: calc(100% - 35%);
   height: 100%;
-
+  position: relative;
 
 }
 
@@ -268,7 +269,7 @@ main{
   padding: 10px;
   position: absolute;
   border-radius: 7px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .my-message span,
@@ -286,18 +287,18 @@ main{
   padding: 5px 20px;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
+  position: absolute;
 }
 
 #main-bottom i{
   font-size: 25px;
-
 }
 
 #main-bottom input{
   width: 90%;
   height: 100%;
   padding: 10px;
+  border: 0;
 }
 
 /*end bottom main*/
