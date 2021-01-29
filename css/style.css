@@ -9,6 +9,7 @@
 
 body{
   background-color: #DADBD5;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -31,6 +32,10 @@ i{
 i:hover{
   cursor: pointer;
 
+}
+
+img{
+  border-radius: 50%;
 }
 
 /*end utilities*/
@@ -177,6 +182,7 @@ header{
 .sidebar-contacts-list > .avatar-container > img{
   margin-bottom: 5px;
   width: 15%;
+
 }
 
 
@@ -207,7 +213,7 @@ header{
 }
 
 #friend-section  .avatar-container{
-  width: 40px;
+  width: 45px;
 
 }
 
@@ -221,7 +227,7 @@ header{
 }
 
 #friend-section span:nth-of-type(2){
-  color:#B3B7BE;
+  color:#B7BBBC;
 }
 
 #friend-section .friend-section-icons i{
@@ -279,7 +285,7 @@ main{
   padding: 10px;
   position: absolute;
   border-radius: 7px;
-  
+
 }
 
 .my-message span,
