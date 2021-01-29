@@ -57,22 +57,22 @@ header{
 
 #friend-section{
   height: 60px;
-  width: calc(100% - 35% );
+  width: 100%;
   background-color: #EAEAEA;
 }
 
 main{
   width: calc(100% - 35%);
-  height: calc(100% - 60px);
+  height: 100%;
   background-color: blue;
 }
 
-#bottom{
-  width: calc(100% - 35%);
+#central-main{
+  height:calc(100% - 60px);
+}
+
+#main-bottom{
+  width:100%;
   background-color: green;
   height: 60px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
 }
