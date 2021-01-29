@@ -1,6 +1,21 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .overflow-y{
   overflow-y: auto;
+}
+
+header{
+  height: 100px;
+  background-color: #009788;
+  position: fixed;
+  width: 100vw;
+  top:0;
 }
 
 
