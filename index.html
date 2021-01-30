@@ -40,16 +40,21 @@
             <a href="">Attiva notifiche desktop</a>
           </div>
           <!--end sidebar notifications control -->
+
+          <!-- sidebar chat search -->
           <div class="chat-search">
             <input type="text" placeholder="Cerca o inizia una nuova chat">
             <i class="fas fa-search"></i>
           </div>
-          <div class="sidebar-contacts-list">
+          <!-- end sidebar chat search -->
+
+          <!-- sidebar contacts list -->
+          <ul class="sidebar-contacts-list">
             <li v-for="element in contacts" class="avatar-container">
               <img :src="element.avatar" alt="avatar">
               <span>{{element.name}}</span>
             </li>
-          </div>
+          </ul>
         </div>
         <!--end sidebar -->
 
