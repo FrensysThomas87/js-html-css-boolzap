@@ -45,10 +45,10 @@
             <i class="fas fa-search"></i>
           </div>
           <div class="sidebar-contacts-list">
-            <div v-for="element in contacts" class="avatar-container">
+            <li v-for="element in contacts" class="avatar-container">
               <img :src="element.avatar" alt="avatar">
               <span>{{element.name}}</span>
-            </div>
+            </li>
           </div>
         </div>
         <!--end sidebar -->

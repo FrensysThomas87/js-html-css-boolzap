@@ -77,6 +77,8 @@ header{
   border-right: 2px solid #9B9DE2;
 }
 
+/*upper sidebar*/
+
 #upper-sidebar{
   height: 60px;
   background-color: #EAEAEA;
@@ -106,9 +108,9 @@ header{
 
 }
 
+/*end upper sidebar*/
 
-
-
+/*sidebar notifications control*/
 .sidebar-notifications-control{
   width: 100%;
   height: 70px;
@@ -138,6 +140,9 @@ header{
   color:#517C99;
 }
 
+/* end sidebar notifications control*/
+
+/*sidebar chat search*/
 .chat-search{
   width: 100%;
   height: 40px;
@@ -161,11 +166,17 @@ header{
 
 }
 
+/*end sidebar chat search*/
+
+/*sidebar contacts list*/
+
 .sidebar-contacts-list{
   padding: 10px;
   flex-direction: column;
+}
 
-
+.sidebar-contacts-list li{
+  list-style: none;
 }
 
 .sidebar-contacts-list > .avatar-container{
@@ -192,7 +203,7 @@ header{
   margin-left: 15px;
   vertical-align: top;
 }
-
+/*end sidebar contacts list*/
 
 
 /*end sidebar*/
