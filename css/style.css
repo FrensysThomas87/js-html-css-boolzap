@@ -8,8 +8,10 @@
 }
 
 body{
-  background-color: #DADBD5;
+  /* background-color: #DADBD5; */
   font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(to bottom,#009688 0px,
+    #009688 15vh,#dddbd1 15vh,#d2dbdc 100%);
 }
 
 
@@ -41,13 +43,13 @@ i:hover{
 
 /*end utilities*/
 
-header{
+/* header{
   height: 100px;
   background-color: #009788;
   position: fixed;
   width: 100vw;
   top:0;
-}
+} */
 
 
 .container{
