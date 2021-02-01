@@ -20,7 +20,7 @@
           <!-- upper sidebar -->
           <div id="upper-sidebar" class="flex">
             <div class="avatar-container flex">
-              <img src="img/avatar_io.jpg" alt="Avatar">
+              <img class="radius-50" src="img/avatar_io.jpg" alt="Avatar">
               <span>Nome Utente</span>
             </div>
             <div class="upper-sidebar-icons flex">
@@ -33,7 +33,7 @@
 
           <!-- sidebar notifications control -->
           <div class="sidebar-notifications-control">
-            <div class="float-l">
+            <div class="float-l radius-50">
               <i class="fas fa-bell-slash"></i>
             </div>
             <span>Ricevi notifiche di nuovi messaggi</span><br>
@@ -51,7 +51,7 @@
           <!-- sidebar contacts list -->
           <ul class="sidebar-contacts-list">
             <li v-for="element in contacts" class="avatar-container">
-              <img :src="element.avatar" alt="avatar">
+              <img :src="element.avatar" alt="avatar" class="radius-50">
               <span>{{element.name}}</span>
             </li>
           </ul>
@@ -66,7 +66,7 @@
           <div id="friend-section" class=" flex">
             <div class="friend-section-avatar flex">
               <div class="avatar-container">
-                <img src="img/avatar_1.jpg" alt="Avatar">
+                <img src="img/avatar_1.jpg" alt="Avatar" class="radius-50">
               </div>
               <div>
                 <span>Michele</span><br>
