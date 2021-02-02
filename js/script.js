@@ -7,6 +7,8 @@ data:{
   messageSended:{},
   answerMessage:{},
   defaultAnswer:'ok',
+  currentDate: new Date().toLocaleString(),
+
 
   contacts: [
 	{
@@ -104,13 +106,13 @@ data:{
       message = this.inputMessage;
 
       this.messageSended = {
-        date: '10/01/2020 15:30:55',
+        date: this.currentDate,
 				text: message,
 				status: 'sent',
       }
 
       this.answerMessage = {
-        date: '10/01/2020 15:30:55',
+        date: this.currentDate,
         text: risposta,
         status: 'received',
       },
