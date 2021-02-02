@@ -65,10 +65,10 @@
           <div id="friend-section" class=" flex">
             <div class="friend-section-avatar flex">
               <div class="avatar-container">
-                <img src="img/avatar_1.jpg" alt="Avatar" class="radius-50">
+                <img :src="contacts[activeIndex].avatar" alt="Avatar" class="radius-50">
               </div>
               <div>
-                <span v-for="element in contacts[activeIndex].name">{{element}}</span><br>
+                <span >{{contacts[activeIndex].name}}</span><br>
                 <span>Ultimo accesso oggi alle</span>
               </div>
             </div>
