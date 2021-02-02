@@ -2,8 +2,9 @@
 new Vue({
 el: '#app',
 data:{
-
+  inputMessage:'',
   activeIndex: 0,
+  messageSended:{},
 
   contacts: [
 	{
@@ -94,7 +95,20 @@ data:{
   methods:{
     activeChat:function(index){
       this.activeIndex = index;
+    },
+
+    sendMessage:function(message){
+      message = this.inputMessage
+      this.messageSended = {
+        date: '10/01/2020 15:30:55',
+				text: message,
+				status: 'sent',
+      }
+
+      this.contacts.messages.push(this.messageSended);
+
     }
+
   },
 
 
