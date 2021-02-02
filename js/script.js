@@ -105,7 +105,7 @@ data:{
 				status: 'sent',
       }
 
-      this.contacts.messages.push(this.messageSended);
+      this.contacts[this.activeIndex].messages.push(this.messageSended);
 
     }
 

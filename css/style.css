@@ -283,7 +283,7 @@ main{
 
 .sent,
 .received{
-  height: 50px;
+  
   width: 200px;
   padding: 10px;
   position: relative;
@@ -291,8 +291,8 @@ main{
   margin-bottom: 20px;
 }
 
-.my-message span,
-.friend-message span{
+.sent span,
+.received span{
   line-height: 25px;
 }
 
