@@ -43,14 +43,6 @@ i:hover{
 
 /*end utilities*/
 
-/* header{
-  height: 100px;
-  background-color: #009788;
-  position: fixed;
-  width: 100vw;
-  top:0;
-} */
-
 
 .container{
   width: 80%;
@@ -58,7 +50,6 @@ i:hover{
   height: calc(100vh - 40px);
   margin: 20px auto;
   position: relative;
-
 }
 
 .container::after,
@@ -92,7 +83,6 @@ i:hover{
 
 #upper-sidebar > .avatar-container{
   align-items: center;
-
   width: 150px;
   height: 40px;
 }

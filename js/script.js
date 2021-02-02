@@ -2,7 +2,8 @@
 new Vue({
 el: '#app',
 data:{
-
+allMessages : [],
+messageReceived: [],
 
   contacts: [
 	{
@@ -89,6 +90,32 @@ data:{
 		  ],
 	   },
     ]
-  }
+  },
+  methods:{
+    textList:function(){
+      return this.allMessages = this.contacts.filter((element)=>{
+        return element.messages;
+
+      })
+    },
+
+    textReceived:function(){
+     this.messageReceived = this.allMessages.filter((element)=>{
+        return element.status === 'received';
+      })
+    }
+  },
+
+  created: function(){
+    this.textList();
+    console.log(this.allMessages);
+  },
+
+  // created:function(){
+  //   this.textReceived();
+  //   console.log(this.messageReceived)
+  // }
+
+
 });
 Vue.config.devtools = true;

@@ -79,23 +79,28 @@
             </div>
           </div>
           <!--end friend-section -->
+
+          <!-- central main -->
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
-              <div class="my-message">
+              <div class="my-message" v-for="element in contacts">
                 <span>Ciao come stai?</span>
               </div>
-              <div class="friend-message">
-                <span>Ciao come stai?</span>
+              <div class="friend-message" v-for="element in messageReceived">
+                <span>{{element.text}}</span>
               </div>
             </div>
           </div>
+        <!-- end central main -->
 
+        <!-- main bottom -->
           <div id="main-bottom" class="flex">
             <i class="far fa-smile"></i>
             <input type="text" placeholder="Scrivi messaggio">
             <i class="fas fa-microphone"></i>
           </div>
         </main>
+        <!-- end main bottom -->
         <!--end main -->
       </div>
     </div>
