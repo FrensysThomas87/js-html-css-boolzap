@@ -262,6 +262,7 @@ main{
 #central-main{
   height:100%;
   background-image: url("../img/mine.jpg");
+  padding: 30px 30px;
 
 }
 
@@ -269,26 +270,24 @@ main{
 
 .sent{
   background-color: #DDFFC0;
-  top:100px;
-  left: 70%;
+  float: right;
 
 }
 
 .received{
   background-color: #fff;
-  top:150px;
-  left: 10%;
+  float: left;
+
 }
 
 
 .sent,
 .received{
-  
   width: 200px;
   padding: 10px;
-  position: relative;
   border-radius: 7px;
   margin-bottom: 20px;
+  clear: both;
 }
 
 .sent span,
