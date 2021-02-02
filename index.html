@@ -68,7 +68,7 @@
                 <img src="img/avatar_1.jpg" alt="Avatar" class="radius-50">
               </div>
               <div>
-                <span>Michele</span><br>
+                <span v-for="element in contacts[activeIndex].name">{{element}}</span><br>
                 <span>Ultimo accesso oggi alle</span>
               </div>
             </div>

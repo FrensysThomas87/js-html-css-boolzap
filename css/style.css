@@ -226,11 +226,10 @@ i:hover{
 }
 
 #friend-section span{
-  margin-left: 10px;
   font-size: 13px;
 }
 
-#friend-section span:nth-of-type(2){
+#friend-section span:last-of-type{
   color:#B7BBBC;
 }
 
