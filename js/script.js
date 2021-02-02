@@ -117,9 +117,19 @@ data:{
 
       this.contacts[this.activeIndex].messages.push(this.messageSended);
       this.inputMessage = '';
+
       setTimeout(()=>{
         this.contacts[this.activeIndex].messages.push(this.answerMessage);
       },1000);
+    },
+
+    getLastMessage:function(index){
+      const allMessages = this.contacts[index].messages;
+      const lastIndex = allMessages.length - 1;
+      const lastDate = allMessages[lastIndex].date;
+      return lastDate;
+
+
     }
 
 },
