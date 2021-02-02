@@ -83,12 +83,15 @@
           <!-- central main -->
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
-              <div class="my-message" v-for="element in contacts">
+              <div v-for="message in contacts[activeIndex].messages" :class="message.status">
+                <span>{{message.text}}</span>
+              </div>
+              <!--<div class="my-message">
                 <span>Ciao come stai?</span>
               </div>
               <div class="friend-message" v-for="element in messageReceived">
                 <span>{{element.text}}</span>
-              </div>
+              </div>-->
             </div>
           </div>
         <!-- end central main -->

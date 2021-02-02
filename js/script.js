@@ -4,6 +4,7 @@ el: '#app',
 data:{
 allMessages : [],
 messageReceived: [],
+  activeIndex: 0,
 
   contacts: [
 	{
@@ -93,28 +94,23 @@ messageReceived: [],
   },
   methods:{
     textList:function(){
-      return this.allMessages = this.contacts.filter((element)=>{
+       this.allMessages = this.contacts.filter((element)=>{
         return element.messages;
 
       })
     },
 
     textReceived:function(){
-     this.messageReceived = this.allMessages.filter((element)=>{
-        return element.status === 'received';
-      })
+     this.allMessages.forEach((element) => {
+       if(element.status === 'received'){
+        this.messageReceived.push(element.text);
+       }
+     });
+
     }
   },
 
-  created: function(){
-    this.textList();
-    console.log(this.allMessages);
-  },
 
-  // created:function(){
-  //   this.textReceived();
-  //   console.log(this.messageReceived)
-  // }
 
 
 });

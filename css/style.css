@@ -269,27 +269,28 @@ main{
 
 
 
-.my-message{
+.sent{
   background-color: #DDFFC0;
   top:100px;
   right: 10%;
+  float: right;
 }
 
-.friend-message{
+.received{
   background-color: #fff;
   top:150px;
   left: 10%;
 }
 
 
-.my-message,
-.friend-message{
+.sent,
+.received{
   height: 50px;
   width: 200px;
   padding: 10px;
-  position: absolute;
-  border-radius: 7px;
 
+  border-radius: 7px;
+  margin-bottom: 20px;
 }
 
 .my-message span,
