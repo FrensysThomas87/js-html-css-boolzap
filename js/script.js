@@ -2,8 +2,7 @@
 new Vue({
 el: '#app',
 data:{
-allMessages : [],
-messageReceived: [],
+
   activeIndex: 0,
 
   contacts: [
@@ -93,20 +92,8 @@ messageReceived: [],
     ]
   },
   methods:{
-    textList:function(){
-       this.allMessages = this.contacts.filter((element)=>{
-        return element.messages;
-
-      })
-    },
-
-    textReceived:function(){
-     this.allMessages.forEach((element) => {
-       if(element.status === 'received'){
-        this.messageReceived.push(element.text);
-       }
-     });
-
+    activeChat:function(index){
+      this.activeIndex = index;
     }
   },
 

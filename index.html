@@ -49,7 +49,7 @@
 
           <!-- sidebar contacts list -->
           <ul class="sidebar-contacts-list">
-            <li v-for="element in contacts" class="avatar-container">
+            <li v-for="(element, i) in contacts" class="avatar-container" @click="activeChat(i)">
               <img :src="element.avatar" alt="avatar" class="radius-50">
               <span>{{element.name}}</span>
             </li>
