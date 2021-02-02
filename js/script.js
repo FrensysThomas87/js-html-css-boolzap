@@ -5,6 +5,8 @@ data:{
   inputMessage:'',
   activeIndex: 0,
   messageSended:{},
+  answerMessage:{},
+  defaultAnswer:'ok',
 
   contacts: [
 	{
@@ -97,7 +99,8 @@ data:{
       this.activeIndex = index;
     },
 
-    sendMessage:function(message){
+    sendMessage:function(message, risposta){
+      risposta = this.defaultAnswer
       message = this.inputMessage
       this.messageSended = {
         date: '10/01/2020 15:30:55',
@@ -105,9 +108,34 @@ data:{
 				status: 'sent',
       }
 
+      this.answerMessage = {
+        date: '10/01/2020 15:30:55',
+        text: risposta,
+        status: 'received',
+      },
+
+      console.log(this.answerMessage);
+
       this.contacts[this.activeIndex].messages.push(this.messageSended);
+      this.contacts[this.activeIndex].messages.push(this.answerMessage);
+
 
     }
+
+    // answer:function(defMessage){
+    //   setTimeout(function(){
+    //     defMessage = this.defaultAnswer
+    //     this.answerMessage = {
+    //       date: '10/01/2020 15:30:55',
+  	// 			text: defMessage,
+  	// 			status: 'received',
+    //     }
+    //
+    //     this.contacts[this.activeIndex].messages.push(this.answerMessage);
+    //   },500);
+    // }
+
+
 
   },
 
