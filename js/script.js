@@ -117,23 +117,15 @@ data:{
       console.log(this.answerMessage);
 
       this.contacts[this.activeIndex].messages.push(this.messageSended);
-      this.contacts[this.activeIndex].messages.push(this.answerMessage);
 
 
+
+      setTimeout(()=>{
+     this.contacts[this.activeIndex].messages.push(this.answerMessage);
+  },1000);
     }
 
-    // answer:function(defMessage){
-    //   setTimeout(function(){
-    //     defMessage = this.defaultAnswer
-    //     this.answerMessage = {
-    //       date: '10/01/2020 15:30:55',
-  	// 			text: defMessage,
-  	// 			status: 'received',
-    //     }
-    //
-    //     this.contacts[this.activeIndex].messages.push(this.answerMessage);
-    //   },500);
-    // }
+
 
 
 
