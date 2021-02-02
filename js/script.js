@@ -100,8 +100,9 @@ data:{
     },
 
     sendMessage:function(message, risposta){
-      risposta = this.defaultAnswer
-      message = this.inputMessage
+      risposta = this.defaultAnswer;
+      message = this.inputMessage;
+
       this.messageSended = {
         date: '10/01/2020 15:30:55',
 				text: message,
@@ -114,25 +115,14 @@ data:{
         status: 'received',
       },
 
-      console.log(this.answerMessage);
-
       this.contacts[this.activeIndex].messages.push(this.messageSended);
-
-
-
+      this.inputMessage = '';
       setTimeout(()=>{
-     this.contacts[this.activeIndex].messages.push(this.answerMessage);
-  },1000);
+        this.contacts[this.activeIndex].messages.push(this.answerMessage);
+      },1000);
     }
 
-
-
-
-
-  },
-
-
-
+},
 
 });
 Vue.config.devtools = true;
