@@ -8,6 +8,7 @@ data:{
   answerMessage:{},
   defaultAnswer:'ok',
   currentDate: new Date().toLocaleString(),
+  inputSearch:'',
 
 
 
@@ -141,10 +142,16 @@ data:{
       const lastDate = allMessages[lastIndex].date;
       return lastDate;
 
+    },
 
+    getSearchedContact:function(){
+      return this.contacts.filter((element)=>{
+        return element.name.match(this.inputSearch);
+      })
     }
 
-},
+
+  },
 
 });
 Vue.config.devtools = true;
