@@ -9,6 +9,7 @@ data:{
   defaultAnswer:'ok',
   currentDate: new Date().toLocaleString(),
   inputSearch:'',
+  dropMenuClass: 'disp-none',
 
 
 
@@ -152,9 +153,19 @@ data:{
           element.visible = false;
         }
       });
+    },
+
+    showDropDownMenu:function(){
+      if(this.dropMenuClass === 'disp-block'){
+        this.dropMenuClass = 'disp-none'
+      }else{
+        this.dropMenuClass = 'disp-block';
+      }
+
+
     }
 
-  
+
   }
 
 });

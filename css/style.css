@@ -45,6 +45,10 @@ i:hover{
   display: block;
 }
 
+.disp-none{
+  display: none;
+}
+
 /*end utilities*/
 
 
@@ -307,7 +311,7 @@ main{
   height: 70px;
   background-color: #fff;
   z-index: 2;
-  display: none;
+
 }
 
 .sent ul{
