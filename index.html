@@ -42,14 +42,15 @@
 
           <!-- sidebar chat search -->
           <div class="chat-search">
-            <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="inputSearch" >
+            <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="inputSearch"
+            @keyup="getSearchedContact"  >
             <i class="fas fa-search"></i>
           </div>
           <!-- end sidebar chat search -->
 
           <!-- sidebar contacts list -->
           <ul class="sidebar-contacts-list">
-            <li v-for="(element, i) in getSearchedContact()" class="avatar-container" @click="activeChat(i)">
+            <li v-for="(element, i) in contacts" class="avatar-container" @click="activeChat(i)" >
               <img :src="element.avatar" alt="avatar" class="radius-50">
               <span>{{element.name}}</span>
             </li>

@@ -145,20 +145,21 @@ data:{
     },
 
     getSearchedContact:function(){
-      return this.contacts.filter((element, index)=>{
-        console.log(this.activeIndex);
-        
-        return element.name.match(this.inputSearch);
+      this.contacts.forEach((element) => {
+        if(element.name.toLowerCase().includes(this.inputSearch.toLowerCase())){
+          element.visible = true;
+        }else{
+          element.visible = false;
+        }
+      });
+    }
 
-      })
-    },
-
-    // capitalizeFirstChar:function(inputUtente){
+    // inputLowerCase:function(inputUtente){
     //   inputUtente = this.inputSearch;
-    //   const inputCapitalized = inputUtente.charAt(0).toUpperCase() + inputUtente.substring(1).toLowerCase();
-    //   return inputCapitalized;
+    //   const inputLowered = inputUtente.toLoweCase();
+    //   return inputLowered;
     // }
-  },
+  }
 
 });
 Vue.config.devtools = true;
