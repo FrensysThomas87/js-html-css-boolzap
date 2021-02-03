@@ -85,7 +85,12 @@
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
               <div v-for="message in contacts[activeIndex].messages" :class="message.status">
+                <i class="fas fa-caret-down"></i>
                 <span>{{message.text}}</span>
+                <ul>
+                  <li>Message Info</li>
+                  <li>Delete message</li>
+                </ul>
               </div>
             </div>
           </div>

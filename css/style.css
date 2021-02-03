@@ -41,6 +41,10 @@ i:hover{
   border-radius: 50%;
 }
 
+.disp-block{
+  display: block;
+}
+
 /*end utilities*/
 
 
@@ -288,11 +292,37 @@ main{
   border-radius: 7px;
   margin-bottom: 20px;
   clear: both;
+  position: relative;
+}
+
+.sent li,
+.received li{
+  list-style: none;
+}
+
+.sent ul,
+.received ul{
+  position: absolute;
+  width: 300px;
+  height: 70px;
+  background-color: #fff;
+  z-index: 2;
+  display: none;
+}
+
+.sent ul{
+  right: 10px;
 }
 
 .sent span,
 .received span{
   line-height: 25px;
+}
+
+.fas.fa-caret-down{
+  position:absolute;
+  right: 5px;
+  bottom: 3px;
 }
 
 /*end central main*/

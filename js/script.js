@@ -154,11 +154,7 @@ data:{
       });
     }
 
-    // inputLowerCase:function(inputUtente){
-    //   inputUtente = this.inputSearch;
-    //   const inputLowered = inputUtente.toLoweCase();
-    //   return inputLowered;
-    // }
+  
   }
 
 });
