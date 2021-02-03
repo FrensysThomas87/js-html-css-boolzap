@@ -145,12 +145,19 @@ data:{
     },
 
     getSearchedContact:function(){
-      return this.contacts.filter((element)=>{
+      return this.contacts.filter((element, index)=>{
+        console.log(this.activeIndex);
+        
         return element.name.match(this.inputSearch);
+
       })
-    }
+    },
 
-
+    // capitalizeFirstChar:function(inputUtente){
+    //   inputUtente = this.inputSearch;
+    //   const inputCapitalized = inputUtente.charAt(0).toUpperCase() + inputUtente.substring(1).toLowerCase();
+    //   return inputCapitalized;
+    // }
   },
 
 });
