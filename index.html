@@ -69,7 +69,7 @@
               </div>
               <div>
                 <span >{{contacts[activeIndex].name}}</span><br>
-                <span>Ultimo messaggio: {{getLastMessage(activeIndex)}}</span>
+                <span>Ultimo messaggio: {{getLastTime(activeIndex)}}</span>
               </div>
             </div>
             <div class="friend-section-icons">
@@ -86,12 +86,6 @@
               <div v-for="message in contacts[activeIndex].messages" :class="message.status">
                 <span>{{message.text}}</span>
               </div>
-              <!--<div class="my-message">
-                <span>Ciao come stai?</span>
-              </div>
-              <div class="friend-message" v-for="element in messageReceived">
-                <span>{{element.text}}</span>
-              </div>-->
             </div>
           </div>
         <!-- end central main -->

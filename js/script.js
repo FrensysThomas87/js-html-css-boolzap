@@ -10,6 +10,7 @@ data:{
   currentDate: new Date().toLocaleString(),
 
 
+
   contacts: [
 	{
 		name: 'Michele',
@@ -101,8 +102,22 @@ data:{
       this.activeIndex = index;
     },
 
-    sendMessage:function(message, risposta){
+    autoAnswer:function(){
       risposta = this.defaultAnswer;
+      this.answerMessage = {
+        date: this.currentDate,
+        text: risposta,
+        status: 'received',
+      }
+
+    let that = this;
+    setTimeout(function(){
+      that.contacts[that.activeIndex].messages.push(that.answerMessage);
+      },1000)
+    },
+
+    sendMessage:function(message, risposta){
+
       message = this.inputMessage;
 
       this.messageSended = {
@@ -111,21 +126,16 @@ data:{
 				status: 'sent',
       }
 
-      this.answerMessage = {
-        date: this.currentDate,
-        text: risposta,
-        status: 'received',
-      },
+
 
       this.contacts[this.activeIndex].messages.push(this.messageSended);
       this.inputMessage = '';
 
-      setTimeout(()=>{
-        this.contacts[this.activeIndex].messages.push(this.answerMessage);
-      },1000);
+      this.autoAnswer();
+
     },
 
-    getLastMessage:function(index){
+    getLastTime:function(index){
       const allMessages = this.contacts[index].messages;
       const lastIndex = allMessages.length - 1;
       const lastDate = allMessages[lastIndex].date;
