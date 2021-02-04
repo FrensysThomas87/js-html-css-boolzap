@@ -303,6 +303,12 @@ main{
 .received li{
   list-style: none;
   cursor:pointer;
+
+}
+
+.sent li:hover,
+.received li:hover{
+  background-color: #ccc;
 }
 
 .sent ul,
@@ -312,8 +318,13 @@ main{
   height: 70px;
   background-color: #fff;
   z-index: 2;
-
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #000;
 }
+
+
+
 
 .sent ul{
   right: 10px;
