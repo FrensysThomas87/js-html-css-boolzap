@@ -183,10 +183,7 @@ data:{
     },
 
     deleteMessage:function(index){
-      this.msgVisible.index = index;
-      this.msgVisible.show = false;
-      console.log('index chiave ' + this.msgVisible.index);
-      console.log('Index messaggio ' + index)
+      this.contacts[this.activeIndex].messages.splice(index,1);
     }
   }
 

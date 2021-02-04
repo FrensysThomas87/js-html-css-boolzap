@@ -88,8 +88,7 @@
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
               <div v-for="(message,i) in contacts[activeIndex].messages"
-              :class="message.status"
-              v-if="msgVisible.show === true && msgVisible.index !== i">
+              :class="message.status">
                 <i class="fas fa-caret-down" @click="showDropDownMenu(i)"></i>
                 <span>{{message.text}}</span>
                 <ul v-if="activeMsg.show === true && activeMsg.index === i">
@@ -104,7 +103,8 @@
         <!-- main bottom -->
           <div id="main-bottom" class="flex">
             <i class="far fa-smile"></i>
-            <input type="text" placeholder="Scrivi messaggio" v-model="inputMessage" v-on:keyup.enter="sendMessage(inputMessage, defaultAnswer)" >
+            <input type="text" placeholder="Scrivi messaggio" v-model="inputMessage"
+            v-on:keyup.enter="sendMessage(inputMessage, defaultAnswer)" >
             <i class="fas fa-microphone"></i>
           </div>
         </main>
