@@ -9,6 +9,10 @@ data:{
   defaultAnswer:'ok',
   inputSearch:'',
   dropMenuClass: 'disp-none',
+  activeMsg: {
+      index: false,
+      show: false
+  },
 
 
 
@@ -158,13 +162,14 @@ data:{
       });
     },
 
-    showDropDownMenu:function(){
 
-      if(this.dropMenuClass === 'disp-block'){
-        this.dropMenuClass = 'disp-none';
-      }else{
-        this.dropMenuClass = 'disp-block';
-      }
+    // Mostra e nasconde il dropdown menu del singolo messaggio
+    showDropDownMenu:function(index){
+      this.activeMsg.index = index;
+      this.activeMsg.show = !this.activeMsg.show;
+      console.log(this.activeMsg.index);
+      console.log(this.activeMsg.show);
+
     },
 
     // genera la data corrente

@@ -88,9 +88,9 @@
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
               <div v-for="(message,i) in contacts[activeIndex].messages" :class="message.status">
-                <i class="fas fa-caret-down" @click="showDropDownMenu()"></i>
+                <i class="fas fa-caret-down" @click="showDropDownMenu(i)"></i>
                 <span>{{message.text}}</span>
-                <ul :class="dropMenuClass" >
+                <ul v-if="activeMsg.show === true && activeMsg.index === i">
                   <li>Message Info</li>
                   <li>Delete message</li>
                 </ul>
