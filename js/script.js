@@ -7,13 +7,12 @@ data:{
   messageSended:{},
   answerMessage:{},
   defaultAnswer:'ok',
-  currentDate: new Date().toLocaleString(),
   inputSearch:'',
   dropMenuClass: 'disp-none',
-  idx: - 1,
 
 
 
+// Oggetto contacts
   contacts: [
 	{
 		name: 'Michele',
@@ -101,10 +100,12 @@ data:{
     ]
   },
   methods:{
+    // funzione che permette di switchare da una chat all'altra
     activeChat:function(index){
       this.activeIndex = index;
     },
 
+    // funzione per l'autorisposta
     autoAnswer:function(){
       risposta = this.defaultAnswer;
       this.answerMessage = {
@@ -119,6 +120,7 @@ data:{
       },1000)
     },
 
+    // funzione per mandare i messaggi
     sendMessage:function(message, risposta){
 
       message = this.inputMessage;
@@ -136,6 +138,7 @@ data:{
 
     },
 
+    // Prende l'indice dell'ora dell'ultimo messagio
     getLastTime:function(index){
       const allMessages = this.contacts[index].messages;
       const lastIndex = allMessages.length - 1;
@@ -144,6 +147,7 @@ data:{
 
     },
 
+    // funzione che serve per filtrare i contatti cecati
     getSearchedContact:function(){
       this.contacts.forEach((element) => {
         if(element.name.toLowerCase().includes(this.inputSearch.toLowerCase())){
@@ -160,10 +164,10 @@ data:{
         this.dropMenuClass = 'disp-none';
       }else{
         this.dropMenuClass = 'disp-block';
-
-
       }
     },
+
+    // genera la data corrente
     dateGenerator: function(){
       const actualDate = dayjs().format('DD-MM-YYYY HH:mm:ss');
       return actualDate;
