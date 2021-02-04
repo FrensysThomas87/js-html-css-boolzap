@@ -5,6 +5,7 @@
     <title>Boolzapp</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
@@ -84,10 +85,10 @@
           <!-- central main -->
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
-              <div v-for="message in contacts[activeIndex].messages" :class="message.status">
-                <i class="fas fa-caret-down" @click="showDropDownMenu"></i>
+              <div v-for="(message,i) in contacts[activeIndex].messages" :class="message.status">
+                <i class="fas fa-caret-down" @click="showDropDownMenu()"></i>
                 <span>{{message.text}}</span>
-                <ul :class="dropMenuClass"  >
+                <ul :class="dropMenuClass" >
                   <li>Message Info</li>
                   <li>Delete message</li>
                 </ul>

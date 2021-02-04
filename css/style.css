@@ -302,6 +302,7 @@ main{
 .sent li,
 .received li{
   list-style: none;
+  cursor:pointer;
 }
 
 .sent ul,

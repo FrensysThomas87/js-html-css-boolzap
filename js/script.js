@@ -10,6 +10,7 @@ data:{
   currentDate: new Date().toLocaleString(),
   inputSearch:'',
   dropMenuClass: 'disp-none',
+  idx: - 1,
 
 
 
@@ -107,7 +108,7 @@ data:{
     autoAnswer:function(){
       risposta = this.defaultAnswer;
       this.answerMessage = {
-        date: this.currentDate,
+        date: this.dateGenerator(),
         text: risposta,
         status: 'received',
       }
@@ -123,12 +124,10 @@ data:{
       message = this.inputMessage;
 
       this.messageSended = {
-        date: this.currentDate,
+        date: '',
 				text: message,
 				status: 'sent',
       }
-
-
 
       this.contacts[this.activeIndex].messages.push(this.messageSended);
       this.inputMessage = '';
@@ -156,16 +155,19 @@ data:{
     },
 
     showDropDownMenu:function(){
+
       if(this.dropMenuClass === 'disp-block'){
-        this.dropMenuClass = 'disp-none'
+        this.dropMenuClass = 'disp-none';
       }else{
         this.dropMenuClass = 'disp-block';
+
+
       }
-
-
-    }
-
-
+    },
+    dateGenerator: function(){
+      const actualDate = dayjs().format('DD-MM-YYYY HH:mm:ss');
+      return actualDate;
+    },
   }
 
 });
