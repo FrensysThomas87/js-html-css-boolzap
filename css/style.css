@@ -137,9 +137,7 @@ i:hover{
   font-size: 20px;
 }
 
-.sidebar-notifications-control > span{
-  color:#517C99;
-}
+
 
 /* end sidebar notifications control*/
 
@@ -205,9 +203,8 @@ i:hover{
   vertical-align: top;
 }
 /*end sidebar contacts list*/
-
-
 /*end sidebar*/
+
 
 /*main friend section*/
 
@@ -238,7 +235,7 @@ i:hover{
 }
 
 #friend-section span:last-of-type{
-  color:#B7BBBC;
+  color:#aaa;
 }
 
 #friend-section .friend-section-icons i{

@@ -176,12 +176,13 @@ data:{
 
     },
 
-    // genera la data corrente
+    // Genera la data corrente
     dateGenerator: function(){
       const actualDate = dayjs().format('DD-MM-YYYY HH:mm:ss');
       return actualDate;
     },
 
+    // Elimina i singoli messaggi
     deleteMessage:function(index){
       this.contacts[this.activeIndex].messages.splice(index,1);
     }
