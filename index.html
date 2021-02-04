@@ -87,12 +87,14 @@
           <!-- central main -->
           <div class="central-main-container">
             <div id="central-main" class="overflow-y">
-              <div v-for="(message,i) in contacts[activeIndex].messages" :class="message.status">
+              <div v-for="(message,i) in contacts[activeIndex].messages"
+              :class="message.status"
+              v-if="msgVisible.show === true && msgVisible.index !== i">
                 <i class="fas fa-caret-down" @click="showDropDownMenu(i)"></i>
                 <span>{{message.text}}</span>
                 <ul v-if="activeMsg.show === true && activeMsg.index === i">
                   <li>Message Info</li>
-                  <li>Delete message</li>
+                  <li @click="deleteMessage(i)">Delete message</li>
                 </ul>
               </div>
             </div>

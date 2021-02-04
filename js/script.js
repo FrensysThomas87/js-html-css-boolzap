@@ -11,7 +11,11 @@ data:{
   dropMenuClass: 'disp-none',
   activeMsg: {
       index: false,
-      show: false
+      show: false,
+  },
+  msgVisible:{
+    show:true,
+    index:false
   },
 
 
@@ -167,8 +171,8 @@ data:{
     showDropDownMenu:function(index){
       this.activeMsg.index = index;
       this.activeMsg.show = !this.activeMsg.show;
-      console.log(this.activeMsg.index);
-      console.log(this.activeMsg.show);
+      // console.log(this.activeMsg.index);
+      // console.log(this.activeMsg.show);
 
     },
 
@@ -177,6 +181,13 @@ data:{
       const actualDate = dayjs().format('DD-MM-YYYY HH:mm:ss');
       return actualDate;
     },
+
+    deleteMessage:function(index){
+      this.msgVisible.index = index;
+      this.msgVisible.show = false;
+      console.log('index chiave ' + this.msgVisible.index);
+      console.log('Index messaggio ' + index)
+    }
   }
 
 });
